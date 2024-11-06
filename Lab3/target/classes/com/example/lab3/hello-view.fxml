@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lab3.HelloController" spacing="15" alignment="CENTER" style="-fx-padding: 20;">
+  <children>
+    <Label text="Find the Minimum of Three Numbers" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <HBox spacing="10" alignment="CENTER">
+      <Label text="a:" />
+      <TextField fx:id="inputA" prefWidth="50" />
+
+      <Label text="b:" />
+      <TextField fx:id="inputB" prefWidth="50" />
+
+      <Label text="c:" />
+      <TextField fx:id="inputC" prefWidth="50" />
+    </HBox>
+
+    <Button text="Calculate Minimum" onAction="#calculateMinimum" style="-fx-font-size: 14px; -fx-padding: 5 10;" />
+
+    <Label fx:id="resultLabel" text="Minimum is:" style="-fx-font-size: 14px; -fx-text-fill: #333;" />
+  </children>
+</VBox>
